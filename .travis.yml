@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.14.0
+
+os:
+  - linux
+  - windows
+
+go_import_path: github.com/Oppodelldog/asterisk
+
+script:
+  - make tests

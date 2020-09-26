@@ -1,0 +1,16 @@
+package callExpr
+
+func Got() string {
+	if true {
+		return "true"
+	} else {
+		return "false"
+	}
+}
+
+func Want() string {
+	if true {
+		return "true"
+	}
+	return "false"
+}
