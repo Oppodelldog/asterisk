@@ -6,6 +6,7 @@ import (
 	"go/printer"
 	"go/token"
 	"io/ioutil"
+	"path"
 	"strings"
 	"testing"
 
@@ -20,7 +21,7 @@ func MustParse(t *testing.T, fileSet *token.FileSet, file string, data []byte) *
 }
 
 func MustReadFile(t *testing.T, file string) []byte {
-	b, err := ioutil.ReadFile(file)
+	b, err := ioutil.ReadFile(path.Join("resources", file))
 	FailOnError(t, err)
 
 	return b

@@ -1,4 +1,4 @@
-package callExpr
+package test
 
 import (
 	"bytes"
@@ -7,14 +7,13 @@ import (
 	"testing"
 
 	. "github.com/Oppodelldog/asterisk"
-	. "github.com/Oppodelldog/asterisk/test"
 )
 
-func TestChangeImportName(t *testing.T) {
+func TestImports(t *testing.T) {
 	var (
 		file     = "code.go"
-		data     = MustReadFile(t, "code1.go")
-		wantData = MustReadFile(t, "code2.go")
+		data     = MustReadFile(t, "imports1.go.txt")
+		wantData = MustReadFile(t, "imports2.go.txt")
 		fileSet  = token.NewFileSet()
 		f        = MustParse(t, fileSet, file, data)
 		s1       = NodeSelections{}

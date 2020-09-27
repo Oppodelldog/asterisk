@@ -1,4 +1,4 @@
-package callExpr
+package test
 
 import (
 	"bytes"
@@ -8,13 +8,12 @@ import (
 	"testing"
 
 	. "github.com/Oppodelldog/asterisk"
-	. "github.com/Oppodelldog/asterisk/test"
 )
 
-func TestAsterisk(t *testing.T) {
+func TestCallExpr(t *testing.T) {
 	var (
 		file    = "code.go"
-		data    = MustReadFile(t, "code.go")
+		data    = MustReadFile(t, "callExpr.go.txt")
 		fileSet = token.NewFileSet()
 		f       = MustParse(t, fileSet, file, data)
 	)
