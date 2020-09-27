@@ -1,0 +1,18 @@
+package resources
+
+
+func R1() bool {
+		return true
+}
+
+func R2() bool {
+
+		return true
+}
+
+func R3() bool {
+
+		return true
+
+}
+
