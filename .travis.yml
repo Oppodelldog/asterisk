@@ -11,4 +11,4 @@ os:
 go_import_path: github.com/Oppodelldog/asterisk
 
 script:
-  - make tests
+  - cd test && go test -race ./...
