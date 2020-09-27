@@ -11,10 +11,9 @@ import (
 
 func TestIfStmt(t *testing.T) {
 	var (
-		file    = "code.go"
 		data    = MustReadFile(t, "if.go.txt")
 		fileSet = token.NewFileSet()
-		f       = MustParse(t, fileSet, file, data)
+		f       = MustParse(t, fileSet, "", data)
 		s1      = NodeSelections{}
 	)
 

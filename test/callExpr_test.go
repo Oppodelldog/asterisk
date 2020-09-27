@@ -12,10 +12,9 @@ import (
 
 func TestCallExpr(t *testing.T) {
 	var (
-		file    = "code.go"
 		data    = MustReadFile(t, "callExpr.go.txt")
 		fileSet = token.NewFileSet()
-		f       = MustParse(t, fileSet, file, data)
+		f       = MustParse(t, fileSet, "", data)
 	)
 
 	var (
